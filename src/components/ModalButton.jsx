@@ -12,7 +12,7 @@ function ModalButton() {
         Open the Modal
         </button>
         {
-            showModal && createPortal(<ModalContent />, document.body)
+            showModal && createPortal(<ModalContent closeModal={()=>setShowModal(false)}/>, document.body)
         }
    </>
   )
